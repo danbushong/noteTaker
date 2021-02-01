@@ -48,7 +48,7 @@ app.post("/api/notes", function( req, res){
     });
 });
 
-app.delete("/api/notes:id", function(req, res){
+app.delete("/api/notes/:id", function(req, res){
     const deleteId = req.params.id;
     //
     fs.readFile("db.json","utf8", function(error, response){
@@ -56,8 +56,6 @@ app.delete("/api/notes:id", function(req, res){
             console.log(error);
         }
         let notes = JSON.parse(response);
-
-
         if (deleteId <= notes.length) {
             res.json(notes.splice(deleteId-1,1));
             for (let i=0; i<notes.length; i++) {
