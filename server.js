@@ -25,6 +25,29 @@ app.get("api/notes", function(req, res){
     res.sendFile(path.join(__dirname, "db.json"));
 });
 
+app.post("/api/notes", function( req, res){
+    //might need to use that star thing
+    fs.readFile(path.join(__dirname, "db.json"), function(error, response){
+        if(error){
+            console.log(error);
+        }
+        const notes = JSON.parse(response);
+        const newNoteId = notes.length + 1;
+        const noteRequest = req.body;
+        const newNote = {
+            id: newNoteId,
+            title: noteRequest.title,
+            text: noteRequest.text
+        };
+        notes.push(newNote);
+        res.JSON(newNote);
+        //here too for the star thing
+        fs.writeFile(path.join(__dirname, "db.json"), JSON.stringify(notes, null, 2), function(err){
+            if(err) throw err;
+        });
+    });
+});
+
 app.listen(PORT, function(){
     console.log("listening on PORT" + PORT)
 })
