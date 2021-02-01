@@ -24,3 +24,7 @@ app.get("/", function(req,res){
 app.get("api/notes", function(req, res){
     res.sendFile(path.join(__dirname, "db.json"));
 });
+
+app.listen(PORT, function(){
+    console.log("listening on PORT" + PORT)
+})
