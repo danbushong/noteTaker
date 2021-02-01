@@ -26,8 +26,8 @@ GitHub URL: https://github.com/danbushong/noteTaker
   Press on title you have created to edit or read the note.
 
   ## Screenshots
-  <img href="https://github.com/danbushong/noteTaker/blob/main/titleNoteTaker.jpg?raw=true">
-  <img href="https://github.com/danbushong/noteTaker/blob/main/noteTaker.jpg?raw=true">
+  <img src="https://github.com/danbushong/noteTaker/blob/main/titleNoteTaker.jpg?raw=true">
+  <img src="https://github.com/danbushong/noteTaker/blob/main/noteTaker.jpg?raw=true">
   
 
   
