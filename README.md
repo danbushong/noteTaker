@@ -9,8 +9,7 @@ GitHub URL: https://github.com/danbushong/noteTaker
   ## Table of Contents
   * [Installation](#Installation)
   * [Usage](#Usage)
-  * [Contributing](#Contributing)
-  * [Tests](#Tests)
+  * [Screenshots](#Screenshots)
   * [License](#License)
   * [Questions](#Questions)
   ## Installation
